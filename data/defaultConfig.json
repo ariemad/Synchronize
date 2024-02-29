@@ -1,0 +1,6 @@
+{
+    "sourcePath": "./source/",
+    "replicaPath": "./replica/",
+    "logPath": "./logs/",
+    "synchronizeInterval": 10000
+}
