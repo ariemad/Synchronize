@@ -1,6 +1,6 @@
 {
     "source": "./source/",
-    "replica": "./thisFolderShouldNotExist",
+    "replica": "./replica/",
     "log": "./logs/",
-    "interval": 10000
+    "intervalTime": 10000
 }

@@ -1,10 +1,10 @@
 import os
-import paths
 import json
+from .paths import paths
 
 def clean_up():
-    if os.path.exists(paths['defaultConfig']):
-        os.remove(paths['defaultConfig'])
+    if os.path.exists(paths['config']):
+        os.remove(paths['config'])
 
 def is_valid_json(file_path):
     try:

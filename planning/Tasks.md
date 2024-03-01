@@ -15,10 +15,23 @@ Generate cases for the config creation.
 
 Generate test cases to generate folders.
 
-## Task 4
+## Task 4 50%
 
 Generate code able to handle those cases
 
-## Task 5
+## Task 5 
+
+Generate set Command Cases
+
+## Task 5.1
+
+Generate code able to handle those cases
+
+## Task 6
 
 Write pseudo code for the file replication
+
+## TODOS
+
+- [] Add commands docstrings
+- [] Folder Path should not be any of the project folders
