@@ -1,6 +1,6 @@
 {
     "source": "./source/",
-    "replica": "./replica/",
+    "replica": "Lorem Ipsum",
     "log": "./logs/",
     "interval": 10000
 }

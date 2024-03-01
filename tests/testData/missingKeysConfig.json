@@ -1,6 +1,5 @@
 {
     "source": "./source/",
     "replica": "./replica/",
-    "log": "./logs/",
-    "interval": 10000
+    "log": "./logs/"
 }
