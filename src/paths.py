@@ -3,5 +3,5 @@ paths = {
     "config": "./config.json",
     "defaultSource": "./source/",
     "defaultReplica": "./replica/",
-    "defaultLog": "./logs",
+    "defaultLog": "./logs/logs.txt",
 }
