@@ -26,8 +26,13 @@ def show():
 
 
 @app.command()
-def set():
-    command.set()
+def set(
+    source: str = typer.Option(None, "--source", help="Source path"),
+    replica: str = typer.Option(None, "--replica", help="Replica path"),
+    log: str = typer.Option(None, "--log", help="Logs path"),
+    interval: int = typer.Option(None, "--interval", help="Interval"),
+):
+    command.set(source, replica, log, interval)
 
 
 @app.callback()

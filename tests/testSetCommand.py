@@ -15,7 +15,7 @@ def test_set_source():
     copy_file(paths["defaultConfig"], paths["config"])
 
     subprocess.run(
-        ["python", "synchronize.py", "set", "--source=./otherSource/"],
+        ["python", "synchronize.py", "set", "--source", "./otherSource/"],
         stdout=subprocess.PIPE,
     )
 
@@ -41,7 +41,7 @@ def test_set_logs():
     copy_file(paths["defaultConfig"], paths["config"])
 
     subprocess.run(
-        ["python", "synchronize.py", "set", "--logs=./logs/logsOther.txt"],
+        ["python", "synchronize.py", "set", "--log=./logs/logsOther.txt"],
         stdout=subprocess.PIPE,
     )
 
@@ -73,7 +73,7 @@ def test_set_all():
             "set",
             "--source=./otherSource/",
             "--replica=./otherReplica/",
-            "--logs=./logs/logsOther.txt",
+            "--log=./logs/logsOther.txt",
             "--interval=12345",
         ],
         stdout=subprocess.PIPE,

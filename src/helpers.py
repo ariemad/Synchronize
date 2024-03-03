@@ -34,10 +34,10 @@ def compare_json_files(file1_path, file2_path):
     with open(file2_path, "r") as file2:
         data2 = json.load(file2)
 
-    if data1 == data2:
-        print("The JSON files are identical.")
-    else:
-        print("The JSON files are different.")
+    print(data1)
+    print(data2)
+
+    return data1 == data2
 
 
 def copy_file(source, destination):
