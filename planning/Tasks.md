@@ -11,11 +11,11 @@ Define desired CLI commands. I will define them in README.md to also start docum
 
 Generate cases for the config creation.
 
-## Task 3.1
+## Task 3.1 DONE
 
 Generate test cases to generate folders.
 
-## Task 4 50%
+## Task 4 DONE
 
 Generate code able to handle those cases
 
@@ -27,9 +27,17 @@ Generate set Command Cases
 
 Generate code able to handle those cases
 
-## Task 6
+## Task 6 
+
+Generate show log script. Print to console.
+
+## Task 7
 
 Write pseudo code for the file replication
+
+## Task 8
+
+Generate file replication script
 
 ## TODOS
 
