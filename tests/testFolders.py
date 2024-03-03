@@ -42,10 +42,17 @@ def test_clean_up_all():
     ), f"File '{paths['config']}' does exist"
 
 
-# Path to replica and logs should be generated. Source must be introduced by user.
+def test_folder_source_not_exist():
+    out = subprocess.run(commandSimple, stdout=subprocess.PIPE)
+
+    message = out.stdout.splitlines()[-1].decode("utf-8")
+
+    assert message == "Error: Folder source does not exist"
 
 
 def test_create_folders_if_not_exist():
+    os.makedirs(paths["defaultSource"])
+
     subprocess.run(commandSimple, stdout=subprocess.PIPE)
 
     assert os.path.exists(
@@ -57,6 +64,7 @@ def test_create_folders_if_not_exist():
 
 
 def test_create_replica():
+    os.makedirs(paths["defaultSource"])
     os.makedirs(paths["defaultLog"])
 
     subprocess.run(commandSimple, stdout=subprocess.PIPE)
@@ -67,6 +75,7 @@ def test_create_replica():
 
 
 def test_create_logs():
+    os.makedirs(paths["defaultSource"])
     os.makedirs(paths["defaultReplica"])
 
     subprocess.run(commandSimple, stdout=subprocess.PIPE)
