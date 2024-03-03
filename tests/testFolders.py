@@ -6,7 +6,7 @@ import subprocess
 from src.paths import paths
 from src.helpers import *
 
-commandSimple = ["python", "synchronize.py"]
+commandSimple = ["python", "synchronize.py", "validate"]
 
 # Tests
 

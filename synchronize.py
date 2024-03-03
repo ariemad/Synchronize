@@ -11,7 +11,13 @@ app = typer.Typer()
 
 @app.command()
 def start():
+    command.validate()
     command.start()
+
+
+@app.command()
+def validate():
+    command.validate()
 
 
 @app.command()
@@ -36,8 +42,7 @@ def callback():
 
 
 if __name__ == "__main__":
-    check_config()
-    create_folders()
+
     app()
 else:
     raise ImportError("Run this file directly. Do not import it")
