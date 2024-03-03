@@ -27,7 +27,7 @@ Generate set Command Cases
 
 Generate code able to handle those cases
 
-## Task 6 
+## Task 6 DONE
 
 Generate show log script. Print to console.
 
