@@ -33,5 +33,5 @@ def check_config():
     if len(incorrectPaths) > 0:
         throw_incorrect_paths(incorrectPaths)
 
-    if isinstance(config["interval"], int) or config["interval"] < 300:
+    if not isinstance(config["interval"], int) or config["interval"] < 300:
         throw_incorrect_interval()

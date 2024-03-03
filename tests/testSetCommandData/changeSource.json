@@ -1,6 +1,6 @@
 {
     "source": "./otherSource/",
     "replica": "./replica/",
-    "log":  "./logs/logs.txt",
+    "log":  "./logs/",
     "interval": 10000
 }

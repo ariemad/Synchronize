@@ -41,7 +41,7 @@ def test_set_logs():
     copy_file(paths["defaultConfig"], paths["config"])
 
     subprocess.run(
-        ["python", "synchronize.py", "set", "--log=./logs/logsOther.txt"],
+        ["python", "synchronize.py", "set", "--log=./logsOther/"],
         stdout=subprocess.PIPE,
     )
 
@@ -73,7 +73,7 @@ def test_set_all():
             "set",
             "--source=./otherSource/",
             "--replica=./otherReplica/",
-            "--log=./logs/logsOther.txt",
+            "--log=./logsOther/",
             "--interval=12345",
         ],
         stdout=subprocess.PIPE,

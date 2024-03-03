@@ -17,7 +17,8 @@ def create_folders():
     if not os.path.exists(config["replica"]):
         os.makedirs(config["replica"])
 
-    if not os.path.exists(config["log"]):
+    filePath = os.path.join(config["log"], paths["defaultLogFile"])
+    if not os.path.exists(filePath):
         os.makedirs(os.path.dirname(config["log"]), exist_ok=True)
-        with open(config["log"], "a"):
+        with open(filePath, "a"):
             pass
