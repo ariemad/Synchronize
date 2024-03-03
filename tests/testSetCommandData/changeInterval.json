@@ -1,0 +1,6 @@
+{
+    "source": "./source/",
+    "replica": "./replica/",
+    "log":  "./logs/logs.txt",
+    "interval": 12345
+}
