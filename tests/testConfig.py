@@ -26,7 +26,7 @@ def test_json_file_validity():
 
 def test_missing_keys():
 
-    copy_file("tests/testData/missingKeysConfig.json", paths["config"])
+    copy_file("tests/testConfigData/missingKeysConfig.json", paths["config"])
 
     out = subprocess.run(commandSimple, stdout=subprocess.PIPE)
 
@@ -37,7 +37,7 @@ def test_missing_keys():
 
 def test_missing_keys2():
 
-    copy_file("tests/testData/missingKeysConfig2.json", paths["config"])
+    copy_file("tests/testConfigData/missingKeysConfig2.json", paths["config"])
 
     out = subprocess.run(commandSimple, stdout=subprocess.PIPE)
 
@@ -48,7 +48,7 @@ def test_missing_keys2():
 
 def test_incorrect_path():
 
-    copy_file("tests/testData/incorrectPathConfig.json", paths["config"])
+    copy_file("tests/testConfigData/incorrectPathConfig.json", paths["config"])
 
     out = subprocess.run(commandSimple, stdout=subprocess.PIPE)
 
@@ -59,7 +59,7 @@ def test_incorrect_path():
 
 def test_incorrect_path2():
 
-    copy_file("tests/testData/incorrectPathConfig2.json", paths["config"])
+    copy_file("tests/testConfigData/incorrectPathConfig2.json", paths["config"])
 
     out = subprocess.run(commandSimple, stdout=subprocess.PIPE)
 
@@ -70,7 +70,7 @@ def test_incorrect_path2():
 
 def test_incorrect_path3():
 
-    copy_file("tests/testData/incorrectPathConfig3.json", paths["config"])
+    copy_file("tests/testConfigData/incorrectPathConfig3.json", paths["config"])
 
     out = subprocess.run(commandSimple, stdout=subprocess.PIPE)
 
@@ -81,13 +81,13 @@ def test_incorrect_path3():
 
 def test_incorrect_interval():
 
-    copy_file("tests/testData/incorrectPathConfig3.json", paths["config"])
+    copy_file("tests/testConfigData/incorrectInterval.json", paths["config"])
 
     out = subprocess.run(commandSimple, stdout=subprocess.PIPE)
 
     message = out.stdout.splitlines()[-1].decode("utf-8")
 
-    assert message == "Error: Incorrect Path"
+    assert message == "Error: Interval value not accepted"
 
 
 # Do before and after tests
@@ -95,6 +95,6 @@ def test_incorrect_interval():
 
 @pytest.fixture(autouse=True)
 def before_and_after_test():
-    clean_up()
+    clean_up(paths["config"])
     yield
-    clean_up()
+    clean_up(paths["config"])
