@@ -43,11 +43,11 @@ Generate test cases for replication script.
 
 Generate code able to handle those cases.
 
-## Task 8.2 
+## Task 8.2 DONE
 
 Make task cyclic.
 
-## Task 9
+## Task 9 DONE
 
 Log file changes to log.txt
 
