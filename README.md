@@ -6,7 +6,7 @@
 [![python](https://img.shields.io/badge/Python-3.9-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Pytest](https://github.com/ariemad/Veeam-Test-Task/actions/workflows/pytest.yml/badge.svg)](https://github.com/ariemad/Veeam-Test-Task/actions/workflows/pytest.yml)
+[![Pytest](https://github.com/ariemad/Synchronize/actions/workflows/pytest.yml/badge.svg)](https://github.com/ariemad/Veeam-Test-Task/actions/workflows/pytest.yml)
 
 ## Usage
 
