@@ -51,13 +51,9 @@ Make task cyclic.
 
 Log file changes to log.txt
 
-# Task 10
+# Task 10 DONE
 
-Add some documentation. Readme.md and CLI
-Update dependencies.
-Make github run tests.
-
-## TODOS
-
-- [] Add commands docstrings
-- [] Folder Path should not be any of the project folders
+Add some documentation. Readme.md and CLI DONE
+Update dependencies. DONE
+Make github run tests. DONE
+Add commands docstrings. DONE
