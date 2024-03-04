@@ -6,6 +6,8 @@ import subprocess
 from src.paths import paths
 from src.helpers import *
 
+command = ["python", "synchronize.py", "start"]
+
 
 def test_copy_test_case():
     copy_folder("tests/testStartCommandData/TestCase1", "./")
@@ -57,11 +59,31 @@ def test_compare_folders():
 def test_sync_1():
     copy_folder("tests/testStartCommandData/TestCase2", "./")
 
+    if not os.path.exists("./source/"):
+        os.makedirs("./source/")
+    if not os.path.exists("./replica/"):
+        os.makedirs("./replica/")
+
+    subprocess.run(
+        command,
+        stdout=subprocess.PIPE,
+    )
+
     assert compare_folders("./source/", "./replica/"), "Folders are not equal"
 
 
 def test_sync_2():
     copy_folder("tests/testStartCommandData/TestCase3", "./")
+
+    if not os.path.exists("./source/"):
+        os.makedirs("./source/")
+    if not os.path.exists("./replica/"):
+        os.makedirs("./replica/")
+
+    subprocess.run(
+        command,
+        stdout=subprocess.PIPE,
+    )
 
     assert compare_folders("./source/", "./replica/"), "Folders are not equal"
 
@@ -69,11 +91,31 @@ def test_sync_2():
 def test_sync_3():
     copy_folder("tests/testStartCommandData/TestCase4", "./")
 
+    if not os.path.exists("./source/"):
+        os.makedirs("./source/")
+    if not os.path.exists("./replica/"):
+        os.makedirs("./replica/")
+
+    subprocess.run(
+        command,
+        stdout=subprocess.PIPE,
+    )
+
     assert compare_folders("./source/", "./replica/"), "Folders are not equal"
 
 
 def test_sync_4():
     copy_folder("tests/testStartCommandData/TestCase5", "./")
+
+    if not os.path.exists("./source/"):
+        os.makedirs("./source/")
+    if not os.path.exists("./replica/"):
+        os.makedirs("./replica/")
+
+    subprocess.run(
+        command,
+        stdout=subprocess.PIPE,
+    )
 
     assert compare_folders("./source/", "./replica/"), "Folders are not equal"
 
@@ -84,11 +126,31 @@ def test_sync_4():
 def test_sync_5():
     copy_folder("tests/testStartCommandData/TestCase6", "./")
 
+    if not os.path.exists("./source/"):
+        os.makedirs("./source/")
+    if not os.path.exists("./replica/"):
+        os.makedirs("./replica/")
+
+    subprocess.run(
+        command,
+        stdout=subprocess.PIPE,
+    )
+
     assert compare_folders("./source/", "./replica/"), "Folders are not equal"
 
 
 def test_sync_6():
     copy_folder("tests/testStartCommandData/TestCase7", "./")
+
+    if not os.path.exists("./source/"):
+        os.makedirs("./source/")
+    if not os.path.exists("./replica/"):
+        os.makedirs("./replica/")
+
+    subprocess.run(
+        command,
+        stdout=subprocess.PIPE,
+    )
 
     assert compare_folders("./source/", "./replica/"), "Folders are not equal"
 
@@ -96,11 +158,31 @@ def test_sync_6():
 def test_sync_7():
     copy_folder("tests/testStartCommandData/TestCase8", "./")
 
+    if not os.path.exists("./source/"):
+        os.makedirs("./source/")
+    if not os.path.exists("./replica/"):
+        os.makedirs("./replica/")
+
+    subprocess.run(
+        command,
+        stdout=subprocess.PIPE,
+    )
+
     assert compare_folders("./source/", "./replica/"), "Folders are not equal"
 
 
 def test_sync_8():
     copy_folder("tests/testStartCommandData/TestCase9", "./")
+
+    if not os.path.exists("./source/"):
+        os.makedirs("./source/")
+    if not os.path.exists("./replica/"):
+        os.makedirs("./replica/")
+
+    subprocess.run(
+        command,
+        stdout=subprocess.PIPE,
+    )
 
     assert compare_folders("./source/", "./replica/"), "Folders are not equal"
 
@@ -111,11 +193,31 @@ def test_sync_8():
 def test_sync_9():
     copy_folder("tests/testStartCommandData/TestCase10", "./")
 
+    if not os.path.exists("./source/"):
+        os.makedirs("./source/")
+    if not os.path.exists("./replica/"):
+        os.makedirs("./replica/")
+
+    subprocess.run(
+        command,
+        stdout=subprocess.PIPE,
+    )
+
     assert compare_folders("./source/", "./replica/"), "Folders are not equal"
 
 
 def test_sync_10():
     copy_folder("tests/testStartCommandData/TestCase11", "./")
+
+    if not os.path.exists("./source/"):
+        os.makedirs("./source/")
+    if not os.path.exists("./replica/"):
+        os.makedirs("./replica/")
+
+    subprocess.run(
+        command,
+        stdout=subprocess.PIPE,
+    )
 
     assert compare_folders("./source/", "./replica/"), "Folders are not equal"
 
@@ -123,11 +225,31 @@ def test_sync_10():
 def test_sync_11():
     copy_folder("tests/testStartCommandData/TestCase12", "./")
 
+    if not os.path.exists("./source/"):
+        os.makedirs("./source/")
+    if not os.path.exists("./replica/"):
+        os.makedirs("./replica/")
+
+    subprocess.run(
+        command,
+        stdout=subprocess.PIPE,
+    )
+
     assert compare_folders("./source/", "./replica/"), "Folders are not equal"
 
 
 def test_sync_12():
     copy_folder("tests/testStartCommandData/TestCase13", "./")
+
+    if not os.path.exists("./source/"):
+        os.makedirs("./source/")
+    if not os.path.exists("./replica/"):
+        os.makedirs("./replica/")
+
+    subprocess.run(
+        command,
+        stdout=subprocess.PIPE,
+    )
 
     assert compare_folders("./source/", "./replica/"), "Folders are not equal"
 

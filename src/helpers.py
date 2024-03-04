@@ -44,6 +44,10 @@ def compare_json_files(file1_path, file2_path):
 def copy_file(source, destination):
     if os.path.isdir(destination):
         destination = os.path.join(destination, os.path.basename(source))
+
+    destination_directory = os.path.dirname(destination)
+    os.makedirs(destination_directory, exist_ok=True)
+
     with open(source, "rb") as src_file:
         with open(destination, "wb") as dest_file:
             dest_file.write(src_file.read())
