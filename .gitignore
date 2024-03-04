@@ -163,3 +163,4 @@ test.py
 source/
 replica/
 logs/
+config.json

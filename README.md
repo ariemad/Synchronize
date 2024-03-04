@@ -63,3 +63,12 @@ python synchronize showconfig
 
 Shows config.
 
+## Contributing
+
+PRs accepted.
+
+Please contact me if you wish to contribute.
+
+## License
+
+MIT © Daniel Bray
