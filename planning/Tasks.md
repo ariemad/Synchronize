@@ -35,17 +35,27 @@ Generate show log script. Print to console.
 
 Write pseudo code for the file replication
 
-## Task 8
+## Task 8  Done
 
 Generate test cases for replication script.
 
-## Task 8.1
+## Task 8.1 Done
 
 Generate code able to handle those cases.
 
 ## Task 8.2 
 
 Make task cyclic.
+
+## Task 9
+
+Log file changes to log.txt
+
+# Task 10
+
+Add some documentation. Readme.md and CLI
+Update dependencies.
+Make github run tests.
 
 ## TODOS
 
