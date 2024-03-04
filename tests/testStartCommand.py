@@ -35,7 +35,7 @@ def test_get_all_files():
         "./source/c/d/e/5.txt",
     ]
 
-    assert files == expected, "Files are not equal"
+    assert sorted(files) == sorted(expected), "Files are not equal"
 
 
 def test_get_all_files2():
