@@ -10,9 +10,13 @@ app = typer.Typer()
 
 
 @app.command()
-def start():
+def start(
+    repeat: bool = typer.Option(
+        False, "--argument", "-a", help="Repeat according to interval "
+    )
+):
     command.validate()
-    command.start()
+    command.start(repeat)
 
 
 @app.command()

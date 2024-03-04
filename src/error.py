@@ -25,7 +25,7 @@ def throw_incorrect_paths(incorrectPaths):
 def throw_incorrect_interval():
     print("Interval is incorrect")
     print("Interval should be a number")
-    print("Interval should be larger than 300 (5 minutes)")
+    print("Interval should be larger than 10 seconds")
 
     throw_and_exit("Interval value not accepted")
 

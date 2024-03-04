@@ -1,5 +1,6 @@
 import json
 import uuid
+import time
 
 from src.paths import paths
 from src.helpers import *
@@ -27,11 +28,8 @@ def change_name_on_replica(checksums, path_with_dir, path_without_dir):
     return checksums
 
 
-def synchronize():
+def synchronize(config):
     checksums = dict()
-
-    with open(paths["config"], "r") as file:
-        config = json.load(file)
 
     filesReplica = get_all_files(config["replica"], config["replica"])
 
@@ -78,5 +76,13 @@ def synchronize():
             os.remove(filePath)
 
 
-def start():
-    synchronize()
+def start(repeat):
+    with open(paths["config"], "r") as file:
+        config = json.load(file)
+
+    if repeat:
+        while True:
+            synchronize(config)
+            time.sleep(config["interval"])
+    else:
+        synchronize(config)

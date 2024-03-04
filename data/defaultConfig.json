@@ -2,5 +2,5 @@
     "source": "./source/",
     "replica": "./replica/",
     "log":  "./logs/",
-    "interval": 10000
+    "interval": 300
 }
