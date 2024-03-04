@@ -12,7 +12,7 @@ app = typer.Typer()
 @app.command()
 def start(
     repeat: bool = typer.Option(
-        False, "--argument", "-a", help="Repeat according to interval "
+        False, "--repeat", "-r", help="Repeat according to interval "
     ),
     print: bool = typer.Option(
         False, "--print", "-p", help="Prints log to the terminal "
@@ -25,11 +25,17 @@ def start(
 @app.command()
 def validate():
     command.validate()
+    print("Config is valid.")
 
 
 @app.command()
-def show():
-    command.show()
+def showlog():
+    command.showLog()
+
+
+@app.command()
+def showconfig():
+    command.showConfig()
 
 
 @app.command()

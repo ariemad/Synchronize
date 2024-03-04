@@ -9,7 +9,8 @@ command = type(
     {
         "start": start.start,
         "set": set.set,
-        "show": show.show,
+        "showLog": show.showLog,
+        "showConfig": show.showConfig,
         "validate": validate.validate,
     },
 )
