@@ -63,6 +63,20 @@ python synchronize showconfig
 
 Shows config.
 
+## Directory Structure
+
+![image](/planning/Directory%20Structure.jpg)
+
+- Data - Pre-generated files
+
+- Planning - Files related to project organization, pseudo-code, auxiliary images...
+
+- Source - Logical files of the project
+
+- Tests - Files for testing (in this case PyTest code)
+
+- synchronize.py - Entry Point for the script
+
 ## Contributing
 
 PRs accepted.
